@@ -1,2 +1,0 @@
-# gotomontreal
-Full Guide
