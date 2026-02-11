@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon — GoToMontréal</title>
+  <meta name="description" content="Something beautiful is on its way. GoToMontréal is building the ultimate guide to experiencing Montréal — by season, by neighborhood, by feeling.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://gotomontreal.com/coming-soon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Coming Soon — GoToMontréal">
+  <meta property="og:description" content="The ultimate decision-first guide to Montréal is almost here.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gotomontreal.com/coming-soon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    :root {
+      --gold: #c8956c;
+      --gold-hover: #d9a87d;
+      --midnight: #0a1628;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+    }
+
+    html { height: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+    }
+
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 22, 40, 0.82) 0%,
+        rgba(10, 22, 40, 0.65) 50%,
+        rgba(10, 22, 40, 0.80) 100%
+      );
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px 24px;
+      max-width: 560px;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 48px;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span { color: var(--gold); }
+
+    .label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.2rem, 8vw, 3.8rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 380px;
+      margin: 0 auto 32px;
+    }
+
+    .input {
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      padding: 14px 20px;
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      outline: none;
+      transition: border-color 0.25s ease;
+    }
+
+    .input::placeholder {
+      color: rgba(255, 255, 255, 0.38);
+    }
+
+    .input:focus {
+      border-color: var(--gold);
+    }
+
+    .submit-btn {
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--midnight);
+      cursor: pointer;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .submit-btn:hover {
+      background: var(--gold-hover);
+      transform: translateY(-2px);
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    .back:hover {
+      color: var(--gold);
+    }
+
+    .back svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .decorative-line {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 20px;
+      border-radius: 2px;
+      opacity: 0.6;
+    }
+
+    @media (min-width: 640px) {
+      .form {
+        flex-direction: row;
+      }
+      .input { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1920&q=80"
+         alt="City skyline at twilight" width="1920" height="1080" loading="eager">
+  </div>
+  <div class="bg-overlay"></div>
+
+  <div class="content">
+    <div class="logo">GoTo<span>Montréal</span></div>
+
+    <div class="decorative-line"></div>
+    <p class="label">Coming Soon</p>
+
+    <h1>Something Beautiful Is On Its Way</h1>
+
+    <p class="desc">
+      We're building the ultimate guide to experiencing Montréal — by season, by neighborhood, by feeling.
+      Not a list. A decision.
+    </p>
+
+    <form class="form" onsubmit="event.preventDefault(); this.querySelector('.submit-btn').textContent = 'Merci!'; this.querySelector('.input').disabled = true;">
+      <input type="email" class="input" placeholder="Your email for early access" aria-label="Email address for early access">
+      <button type="submit" class="submit-btn">Notify Me</button>
+    </form>
+
+    <a href="/" class="back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+      Back to GoToMontréal
+    </a>
+  </div>
+</body>
+</html>
